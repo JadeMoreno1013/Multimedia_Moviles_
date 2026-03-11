@@ -20,11 +20,11 @@ class MainApp extends StatelessWidget {
 
             
             children: [
-              Image(
+             Image(
                 image: NetworkImage(
                   'https://tigers-world.com/wp-content/uploads/Bengala.jpg',
                 ),
-              ),
+              ), 
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
