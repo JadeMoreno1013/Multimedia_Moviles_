@@ -6,7 +6,6 @@ void main() {
   runApp(const MainApp());
 }
 
-
 //Definimos colores de las secciones
 const Color section1Color = Color(0xFF58CC02);
 const Color section2Color = Color(0xFFC209DA);
@@ -92,6 +91,22 @@ class MainApp extends StatelessWidget {
                     "25",
                     style: TextStyle(
                       color: Color(0xFFFF4B91),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
+
+              /// Perfil
+              Row(
+                children: const [
+                  Icon(Icons.person, color: Color.fromARGB(255, 156, 2, 177)),
+                  SizedBox(width: 4),
+                  Text(
+                    "o",
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 156, 2, 177),
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
@@ -285,21 +300,6 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: height * 0.04),
-                Align(
-                  alignment: Alignment.center,
-                  child: Padding(
-                    padding: EdgeInsets.only(left: width * 0.35),
-                    child: LessonNode(
-                      width: width,
-                      content: Icons.star,
-                      color: section2Color,
-                    ),
-                  ),
-                ),
-
-                SizedBox(height: height * 0.04),
-
                 Align(
                   alignment: Alignment.center,
                   child: Padding(
@@ -365,6 +365,23 @@ class MainApp extends StatelessWidget {
               ],
             );
           },
+        ),
+
+        floatingActionButton: FloatingActionButton.extended(
+          onPressed: () {
+            print("Siguiente lección");
+          },
+          backgroundColor: const Color(0xFF58CC02), // verde tipo Duolingo
+
+          icon: Icon(
+            Icons.arrow_forward,
+            color: Color.fromARGB(255, 255, 255, 255),
+          ),
+
+          label: const Text(
+            "Siguiente lección",
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
         ),
 
         //BottomNavegationBar - Barra inferior
