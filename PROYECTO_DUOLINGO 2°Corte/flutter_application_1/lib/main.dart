@@ -286,6 +286,19 @@ class MainApp extends StatelessWidget {
                 ),
 
                 SizedBox(height: height * 0.04),
+                Align(
+                  alignment: Alignment.center,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: width * 0.35),
+                    child: LessonNode(
+                      width: width,
+                      content: Icons.star,
+                      color: section2Color,
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: height * 0.04),
 
                 Align(
                   alignment: Alignment.center,
