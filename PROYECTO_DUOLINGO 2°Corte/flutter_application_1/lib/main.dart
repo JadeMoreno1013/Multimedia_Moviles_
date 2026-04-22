@@ -104,7 +104,7 @@ class MainApp extends StatelessWidget {
                   Icon(Icons.person, color: Color.fromARGB(255, 156, 2, 177)),
                   SizedBox(width: 4),
                   Text(
-                    "o",
+                    "Perfil",
                     style: TextStyle(
                       color: Color.fromARGB(255, 156, 2, 177),
                       fontWeight: FontWeight.bold,
